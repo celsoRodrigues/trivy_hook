@@ -6,7 +6,7 @@ helm repo add aqua https://aquasecurity.github.io/helm-charts/
 helm repo update
 
 # install webhooki server
-pushd ./srv
+pushd ./chart
 helm upgrade wh --install --create-namespace --namespace kube-security . 
 popd
 
